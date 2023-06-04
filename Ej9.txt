@@ -1,0 +1,17 @@
+Ejercicio 9
+Escriba una clase que haga el test automático para las funcionalidades 
+escritas para el ejercicio 6, a saber: 
+
+1. Insertar un vehículo en la colección en una posición determinada, 
+verificar el estado final de la lista. 
+
+Nota: se deben escribir test para verificar el estado de la lista, 
+cuando se inserta en la posición 0, en una posición intermedia, y en la última posición. 
+
+2. Agregar un vehículo a la colección, verificar el estado final de la lista.
+
+3. Dada una posición de la Lista, obtener  un  objeto de la lista, 
+verificar que el objeto es el que está en dicha posición.
+
+4. Dada la patente de un vehículo usado, modificar el precio base, 
+y luego mostrar el precio de venta, verificar el nuevo precio de venta.
