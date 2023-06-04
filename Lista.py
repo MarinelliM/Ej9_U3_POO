@@ -48,31 +48,7 @@ class Lista:
         self.__comienzo=nodo
         self.__actual=nodo
         self.__tope+=1
-    
-    # def insertarVehiculo(self,vehiculo,posicion):
-    #     i = 1
-    #     aux = self.__comienzo
-    #     if posicion < 0 or posicion > self.__tope:
-    #             raise Exception('La posicion no es valida')
-    #     else:
-    #         while i <= self.__tope:
-    #             if posicion == 0:
-    #                 self.agregarVehiculo(vehiculo)
-    #                 i = 1+self.__tope
-    #             elif posicion == 1:
-    #                 nodo = Nodo(vehiculo)
-    #                 aux.setSiguiente(nodo)
-    #                 i = self.__tope+1
-    #             elif i != posicion:
-    #                 aux = aux.getSiguiente()
-    #                 i+=1
-    #             elif i == posicion:
-    #                 nodo = Nodo(vehiculo)
-    #                 nodo.setSiguiente(aux)
-    #                 self.__actual = nodo
-    #                 i = self.__tope+1
-    #         self.__tope+=1
-
+   
     def insertarVehiculo(self,vehiculo,posicion):
         i = 0
         aux = self.__comienzo
@@ -96,30 +72,7 @@ class Lista:
             if posicion == self.__tope:
                 self.__actual = nodo        
             self.__tope+=1
-    # def insertarElemento(self,pos,objeto):
-    #     cont = 1
-    #     cabeza = self.__comienzo
-    #     if self.__comienzo is None:
-    #         nodo = Nodo(objeto)
-    #         nodo.setSiguiente(self.__comienzo)
-    #         self.__comienzo = nodo
-    #         self.__actual = nodo
-    #         self.__tope += 1
-    #     else:
-    #         while cont < pos - 1  and cabeza is not None:
-    #             cont += 1
-    #             cabeza = cabeza.getSiguiente()
-    #         if pos == 1:
-    #             nuevoNodo = Nodo(objeto)
-    #             nuevoNodo.setSiguiente(cabeza)
-    #             self.__comienzo = nuevoNodo
-    #             self.__actual = nuevoNodo
-    #         else:
-    #             nuevoNodo = Nodo(objeto)
-    #             nuevoNodo.setSiguiente(cabeza.getSiguiente())
-    #             cabeza.setSiguiente(nuevoNodo)
-    #         self.__tope+=1
-
+    
     def mostrar(self):
         aux = self.__comienzo
         for e in range(self.__tope):
@@ -163,19 +116,6 @@ class Lista:
             else: 
                 aux = aux.getSiguiente()
                 i += 1
-    
-    # def buscarXpatente(self):
-    #     patente = str(input('Ingrese la patente a buscar:'))
-    #     i = 0
-    #     aux = self.__comienzo
-    #     while aux != None:
-    #         if isinstance(aux,Usado) and patente == aux.getpatente():
-    #             precio = int(input('Ingrese el nuevo precio base del vehiculo:'))
-    #             aux.setpreciobase(precio)
-    #             aux.mostrarimporte()
-    #         else: 
-    #             aux = aux.getSiguiente()
-    #             i += 1
 
     def vehiculomaseco(self):
         i = 0
@@ -221,14 +161,3 @@ class Lista:
             print(lista)
         return lista
             
-            
-            
-            
-            
-        #    dicc = dato.toJson()
-        #    lista.append(dicc)
-        #    aux = aux.getSiguiente()
-        #return lista
-        #OE.guardarJSONArchivo(lista, "NuevosVehiculos.json")
-        #print("--Archivo guardado correctamente--")
-
